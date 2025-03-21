@@ -11,8 +11,8 @@ import {
 const router = Router();
 
 // Item routes
-router.post("/", createItem);
-router.get("/", getAllItems);
+router.post("/create", createItem);
+router.get("/getAllItems", getAllItems);
 router.get("/:id", getItemById);
 router.put("/:id", updateItem);
 router.delete("/:id", deleteItem);
